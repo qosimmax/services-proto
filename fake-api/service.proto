@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "./proto;fakeapi";
+option go_package = "./fakeapi";
 package fakeapi;
 
 // The example service definition.
