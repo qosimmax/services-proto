@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "./proto;fakeapi";
+package fakeapi;
+
+// The example service definition.
+service FakeService {
+  rpc GetFakeRequest (FakeRequest) returns (FakeResponse) {}
+}
+
+message FakeRequest {
+}
+
+message FakeResponse {
+  string message = 1;
+}
