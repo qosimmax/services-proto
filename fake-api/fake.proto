@@ -1,0 +1,11 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+option go_package = "./fakeapi";
+package fakeapi;
+
+
+message FakeData {
+  bool is_fake = 1 [json_name="isFake"];
+  google.protobuf.Timestamp date = 2;
+}
